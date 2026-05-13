@@ -74,7 +74,7 @@ The following table shows the performance metrics of different classification mo
 | Model | Precision | Recall | F1-Score |
 |-------|-----------|--------|----------|
 | **Logistic Regression** | 0.06 | 0.87 | 0.74 | 
-| **Random Forest** | 0.75 | 0.87 | 0.74 | 
+| **Random Forest** | 0.75 | 0.74 | 0.74 | 
 
 ### Metrics Explanation
 
