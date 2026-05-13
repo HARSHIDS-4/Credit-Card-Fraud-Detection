@@ -71,10 +71,10 @@ Credit-Card-Fraud-Detection/
 
 The following table shows the performance metrics of different classification models on the test set:
 
-| Model | Precision | Recall | F1-Score | AUC-ROC |
-|-------|-----------|--------|----------|---------|
-| **Logistic Regression** | 0.82 | 0.68 | 0.74 | 0.9680 |
-| **Random Forest** | 0.94 | 0.87 | 0.90 | 0.9892 |
+| Model | Precision | Recall | F1-Score |
+|-------|-----------|--------|----------|
+| **Logistic Regression** | 0.06 | 0.87 | 0.74 | 
+| **Random Forest** | 0.75 | 0.87 | 0.74 | 
 
 ### Metrics Explanation
 
