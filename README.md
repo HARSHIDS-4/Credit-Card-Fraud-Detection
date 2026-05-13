@@ -78,22 +78,24 @@ The following table shows the performance metrics of different classification mo
 
 ### Metrics Explanation
 
-- **Accuracy:** Overall correctness of predictions (less meaningful for imbalanced data)
 - **Precision:** Of predicted fraud cases, how many were actually fraudulent
   - Important to minimize false positives (customer frustration)
 - **Recall:** Of actual fraud cases, how many were detected
   - Critical metric - missing fraud costs money
 - **F1-Score:** Harmonic mean of Precision and Recall
   - Balanced metric for imbalanced datasets
-- **AUC-ROC:** Area under the Receiver Operating Characteristic curve
-  - Measures model's ability to distinguish between classes
 
 ### Key Insights
-
-- **Random Forest significantly outperforms Logistic Regression** across all metrics
-- **High Recall (87%)** means the model catches most fraudulent transactions
-- **High Precision (94%)** minimizes false alarms that frustrate customers
-- The **highly imbalanced dataset** (0.172% fraud rate) requires careful evaluation beyond accuracy alone
+- **Random Forest outperforms Logistic Regression** on precision —
+  75% vs 6% — meaning far fewer legitimate customers are wrongly blocked
+- **Logistic Regression has higher recall (87%)** but at the cost of
+  extremely low precision (6%) — flagging almost everything as fraud
+  makes it unusable in production
+- **Random Forest achieves a better balance** — 75% precision and 74%
+  recall — catching most fraud while keeping false alarms manageable
+- **The highly imbalanced dataset** (0.172% fraud rate) means accuracy
+  is a useless metric here — a model predicting "no fraud" 100% of the
+  time would score 99.8% accuracy while catching zero fraud
 
 ## 🚀 Getting Started
 
